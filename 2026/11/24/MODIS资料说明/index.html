@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <meta name="description" content="https:&#x2F;&#x2F;www.cnblogs.com&#x2F;cuteshongshong&#x2F;articles&#x2F;3622855.html MODIS 陆地标准产品总体介绍1999 年 2 月 18 日，美国成功地发射了地球观测系统（EOS）的第一颗先进的极地轨道环境遥感卫星Terra。它的主要目标是实现从单系列极轨空间平台上对太阳辐射、大气、海洋和陆地进行综合观测，获取有关海洋、陆地、冰雪圈和太阳动力系统等信息">
+<meta property="og:type" content="article">
+<meta property="og:title" content="lifei192的科研主页">
+<meta property="og:url" content="http://example.com/2026/11/24/MODIS%E8%B5%84%E6%96%99%E8%AF%B4%E6%98%8E/index.html">
+<meta property="og:site_name" content="lifei192的科研主页">
+<meta property="og:description" content="https:&#x2F;&#x2F;www.cnblogs.com&#x2F;cuteshongshong&#x2F;articles&#x2F;3622855.html MODIS 陆地标准产品总体介绍1999 年 2 月 18 日，美国成功地发射了地球观测系统（EOS）的第一颗先进的极地轨道环境遥感卫星Terra。它的主要目标是实现从单系列极轨空间平台上对太阳辐射、大气、海洋和陆地进行综合观测，获取有关海洋、陆地、冰雪圈和太阳动力系统等信息">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-24T04:30:17.311Z">
+<meta property="article:modified_time" content="2026-11-24T05:56:49.095Z">
+<meta property="article:author" content="lifei192">
+<meta name="twitter:card" content="summary">
+  
+  <meta name="author" content="Keep Team">
+  <link rel="canonical" href="http://example.com/2026/11/24/MODIS%E8%B5%84%E6%96%99%E8%AF%B4%E6%98%8E/">
+  <title>Keep Theme</title>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link rel="shortcut icon" href="/images/logo.svg">
+  
+  
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+  
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+  
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+  
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+  
+  <script>
+    (function () {
+      let theme = localStorage.getItem('KEEP-THEME-STATUS');
+      let classname = "";
+      if (!theme || (JSON.parse(theme).isAutoTheme)){
+        classname = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark-mode" : "light-mode";
+      }
+      else{
+        classname = JSON.parse(theme).isDark ? "dark-mode" : "light-mode";
+      }
+      document.documentElement.classList.add(classname);
+    })();
+  </script>
+  <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Keep Theme","author":"Keep Team","avatar":"/images/avatar.svg","logo":"/images/logo.svg","favicon":"/images/logo.svg"},"menu":{"home":"/","archives":"/archives"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"word":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"2.0.8"},"waline":{"server_url":null,"reaction":false,"version":"3.15.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs","custom":{"enable":false,"url":null}},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","search_db_path":"keep-search.json","source_data":{},"version":"4.5.0"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+  
+
+  
+</div>
+
+
+
+<main class="page-container border-box">
+  <!-- home first screen  -->
+  
+
+  <!-- page content -->
+  <div class="page-main-content border-box">
+    <div class="page-main-content-top">
+      
+<header class="header-wrapper">
+
+  <div class="border-box header-content">
+    <div class="left flex-start border-box">
+      
+        <a class="logo-image border-box" href="/">
+          <img src="/images/logo.svg">
+        </a>
+      
+      <a class="site-name border-box" href="/">
+        Keep Theme
+      </a>
+    </div>
+
+    <div class="right border-box">
+      <div class="pc border-box">
+        <ul class="menu-list border-box">
+          
+            
+            <li class="menu-item flex-start border-box">
+              <a class="menu-text-color border-box" href="/">
+                
+                首页
+                
+              </a>
+              
+            </li>
+          
+            
+            <li class="menu-item flex-start border-box">
+              <a class="menu-text-color border-box" href="/archives">
+                
+                归档
+                
+              </a>
+              
+            </li>
+          
+          
+        </ul>
+      </div>
+      <div class="mobile border-box flex-start">
+        
+        <div class="icon-item menu-bar">
+          <div class="menu-bar-middle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-drawer">
+    <ul class="drawer-menu-list border-box">
+      
+        
+        <li class="drawer-menu-item border-box not-sub-menu">
+          <label class="drawer-menu-label border-box">
+            <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+              
+              首页
+            </a>
+            
+          </label>
+          
+        </li>
+      
+        
+        <li class="drawer-menu-item border-box not-sub-menu">
+          <label class="drawer-menu-label border-box">
+            <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+              
+              归档
+            </a>
+            
+          </label>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="window-mask"></div>
+
+</header>
+
+
+    </div>
+
+    <div class="page-main-content-middle border-box">
+
+      <div class="main-content border-box">
+        
+
+          
+<div class="fade-in-down-animation">
+  <div class="post-page-container border-box">
+    <div class="post-content-container border-box">
+      
+
+      <div class="post-content-bottom border-box">
+        
+          <div class="post-title">
+            
+          </div>
+        
+
+        
+          <div class="post-header border-box">
+            
+              <div class="avatar-box border-box">
+                <img src="/images/avatar.svg">
+              </div>
+            
+            <div class="info-box">
+              <div class="author border-box">
+                <span class="name">Keep Team</span>
+                
+                  <span class="author-badge">Lv1</span>
+                
+              </div>
+              <div class="meta-info border-box">
+                
+
+<div class="post-meta-info-container border-box post">
+  <div class="post-meta-info border-box">
+    
+
+    
+      <span class="meta-info-item post-create-date">
+        <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+        <span class="datetime">2026-11-24 12:30:17</span>
+      </span>
+
+      
+        <span class="meta-info-item post-update-date">
+          <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+          <span class="datetime" data-updated="Tue Nov 24 2026 13:56:49 GMT+0800">2026-11-24 13:56:49</span>
+        </span>
+      
+    
+
+    
+
+    
+
+    
+    
+    
+    
+  </div>
+
+  
+</div>
+
+              </div>
+            </div>
+          </div>
+        
+
+        <div class="post-content keep-markdown-body ">
+          
+
+          
+            <hr>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/cuteshongshong/articles/3622855.html" >https://www.cnblogs.com/cuteshongshong/articles/3622855.html<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="MODIS-陆地标准产品总体介绍"><a href="#MODIS-陆地标准产品总体介绍" class="headerlink" title="MODIS 陆地标准产品总体介绍"></a><strong>MODIS 陆地标准产品总体介绍</strong></h2><p>1999 年 2 月 18 日，美国成功地发射了地球观测系统（EOS）的第一颗先进的极地轨道环境遥感卫星Terra。它的主要目标是实现从单系列极轨空间平台上对太阳辐射、大气、海洋和陆地进行综合观测，获取有关海洋、陆地、冰雪圈和太阳动力系统等信息，进行土地利用和土地覆盖研究、气候季节和年际变化研究、自然灾害监测和分析研究、长期气候变率的变化以及大气臭氧变化研究等，进而实现对大气和地球环境变化的长期观测和研究的总体（战略）目标。2002 年 5 月 4 日成功发射 Aqua 星后，每天可以接收两颗星的资料。搭载在Terra 和 Aqua两颗卫星上的中分辨率成像光谱仪（MODIS）是美国地球观测系统（EOS）计划中用于观测全球生物和物理过程的重要仪器。它具有 36 个中等分辨率水平（0.25um~1um）的光谱波段，每 1-2 天对地球表面观测一次。获取陆地和海洋温度、初级生产率、陆地表面覆盖、云、汽溶胶、水汽和火情等目标的图像。<br>本平台提供的 MODIS 陆地标准产品来自 NASA 的陆地过程分布式数据档案中心（The Land Processes Distributed Active Archive Center, LP DAAC&#x2F;NASA）。包括：</p>
+<ul>
+<li>地表反射率（250m,daily;500m,daily;250m,8days;500m,8day）</li>
+<li>地表温度（1000m,daily;1000m,8days;5600m,daily）</li>
+<li>地表覆盖（500m,96days;1000m,yearly）</li>
+<li>植被指数 NDVI&amp;EVI（250m,16daily;500m,16days;1000m,16days;1000m,monthly;</li>
+<li>温度异常&#x2F;火产品（1000m,daily;1000m,8days）</li>
+<li>叶面积指数 LAI&#x2F;光合有效辐射分量 FPAR（1000m,8days）</li>
+<li>总初级生产力 GPP（1000m,8days）。<br>本平台提供的所有 MODIS 陆地标准产品的格式为 HDF-EOS，数据组织方式为 10°经度*10°纬度的分片（TILE）方式。</li>
+</ul>
+<p> </p>
+<p><strong>## Terra 卫星及其数据产品：</strong><br>Terra 星为白天星，其陆地标准产品，包括：<br>地表反射率：Modis 表面反射率产品是表面波谱反射估计，低级数据产品进行了大气和气溶胶的校正，并在此基础上进一步处理产生了 L2 基础数据产品以及 L2G（栅格化 2 级产品）和 L3 数据产品。</p>
+<ul>
+<li>MOD09A1（500 米地表反射率 8 天合成产品）<br>MOD09A1 提供了波段 1-7 的 500米分辨率 8 天合成的数据产品，投影为正弦曲线投影。每一个MOD09A1的像素包含了8 天之内最有可能的L2G观测数值，尽量考虑高观测覆盖、低视角、无云及云的阴影以及气溶胶浓度的影响。此科学数据集提供的产品包括 1-7 波段的反射率值，质量评价数据。</li>
+<li>MOD09GA（500 米地表反射率）<br>MOD09GA 提供了1-7波段每日栅格化二级的数据产品（L2G），投影为正弦曲线投影，包括 500 米的反射率值和 1 公里的观测和地理位置统计 值。500 米科学数据集提供了 1-7波段的反射率、质量评价、观测图层、观测数量和 250 米扫描信息。1 公里科学数据集提供了观测数量、质量状况、传感器角度、太阳角、地理位置标示以及轨道指针。</li>
+<li>MOD09GQ（250 米地表反射率）<br>MOD09GQ 提供了1-2波段每日栅格化二级的数据产品（L2G），投影为正弦曲线投影，包括 250 米的反射率值和1公里的观测和地理位置统计值。此产品提供了1-2波段的反射率、质量评价、观测图层和观测数量信息。MOD09GQ 可以和 MOD09GA 共同使用，因为MOD09GA 存储了重要的质量评估和观测集合信息。</li>
+<li>MOD09Q1（250 米地表反射率 8 天合成产品）<br>MOD09Q1 提供了1-2波段 250 米 8 天合成的栅格化 3 级数据产品（L3），投影为正弦曲线投影，每一个MOD09Q1象元包含了 8 天之内最有可能的 L2G 观测数值，尽量考虑高观测覆盖、低视角、无云及云的阴影以及气溶胶浓度的影响。此科学数据集提供的产品包括1-2 波段反射率值和质量评价数据。</li>
+</ul>
+<p> <br>地表温度：</p>
+<ul>
+<li>MOD11A1（1KM 地表温度&#x2F;反射率 L3 产品）<br>MODIS Terra 星地表温度&#x2F;发射率(LST&#x2F;E)产品以两种方式（swath，grid）提供了包含每个像素地表温度和发射率值的全球数据产品。MOD11A1 是以分片方式组织的栅格数据，投影为正弦曲线投影，时间分辨率为每日，空间分辨率为 1km，本网站提供的为MOD11A1 V5（第五版本）的分片数据。</li>
+<li>MOD11A2（1KM 地表温度&#x2F;反射率 8 天合成 L3 产品）<br>MOD11A2是由每日 1KM 地表温度&#x2F;发射率产品（MOD11A1）合成的，存储的是 8 天中晴好天气下的地表温度&#x2F;发射率的平均值，投影为正弦曲线投影。MOD11A2有白天和夜间数据、质量评估、观测时间、观测角、晴好白天和夜晚的天数以及不同地表覆盖类型在波段 31-32 的地表发射估计。</li>
+<li>MOD11B1（5KM 地表温度&#x2F;发射率 8 天合成 L3 产品）<br>MODIS Terra 星 5KM 每日地表温度&#x2F;发射率 L3 产品（MOD11B1）以两种方式（swath，grid）提供了包含每个像素地表温度和发射率值的全球数据 产品。MOD11B1 是以分片方式组织的栅格数据，投影为正弦曲线投影，时间分辨率为每日，空间分辨率为 5km，本网站提供的为 MOD11B1 V5（第五版本）的分片数据。</li>
+</ul>
+<p> <br>地表覆盖：</p>
+<ul>
+<li>MOD12Q1（1KM 地表覆盖类型 96 天合成）</li>
+<li>MOD12Q2（1KM 地表覆盖类型动态变化 L3 产品）<br>MODIS 土地利用变化动态产品（MOD12Q2，曾经叫做 MODIS 全球植被物候产品）提供了全球尺度的植被覆盖动态估计。另外，也提供了从 MODIS 表面反射率计算出来的和增强型植被指数（EVI）相关的一系列信息。 显示了植被生长、成熟、衰老等季节周期。MOD12Q2 产品一年产生两次，由 24 个月的输入数据产生。（比如：12 个月份的数据包括前后各六个月）。MOD12Q2 V4 数据包括 2001-2004 年的数据。MOD12Q2 产品主要利用 MODIS EVI 产品而不是 MOD09 的表面反射率产品计算而来，MODIS EVI 是由 MODIS 的天顶 BRDF （Nadir Bidirectional Reflectance Distribution Function，双<br>向反射率分布函数）调整反射率（NBAR）计算得来。MODIS EVI 采用了 16 天内的 NBAR 值计算，空间分辨率为 1KM。<br>MODIS NBAR 产品 QA 字段中的雪和冰标示用于去除输入时间序列数据中的雪覆盖表面。因为雪的存在会使 EVI 产生很大的变异，这些并不表示植被物候的真实情况。模型中输入的陆地表面温度数据来自于 MODIS MOD11A28 天合成数据产品。</li>
+</ul>
+<p> <br>植被指数 NDVI&amp;EVI：全球 MODIS 植被指数是为了表现植被状况的时空综合特征而生产的。在生产 MODIS 植被指数的过程中，蓝、红、近红外反射率三个波段的数据被采用，三波段的中心分别为 469nm、645 nm 和 858 nm。MODIS NDVI（归一化植被指数）和 NOAA 先进型甚高分辨率辐射仪（AVHRR）的 NDVI产品配合使用可以展示植被指数的时间序列变化。MODIS 植被指数产品还包含一个新的植被指数，EVI（增强型植被指数）。EVI 尽量减少了冠层背景结构的变化并保持了对植被密度状况的敏感性。EVI 同样运用了蓝色波段去除由烟尘及小于一个像素的薄云等因素造成的大气污染残留。MODIS NDVI 和 EVI 产品由经过水、云、重气溶胶、以及云阴影掩膜处理的双向大气校正表面反射率计算得来。</p>
+<ul>
+<li>MOD13A1（500 米分辨率植被指数 16 天合成产品）<br>全球 MOD13A1 数据为 16 天合成的 500 米 L3 数据产品，投影为正弦曲线投影。植被指数可以用于全球植被指数监测，也可以用在显示地表覆盖或者地表覆盖变化的产品中，还可以用作全球生物地球化学和水文模型或者全球或地区气候等模型的输入数据，还可以用于描述陆地表面的生物物理特征及进程，包括初级生产以及陆地表面覆盖的转换。</li>
+<li>MOD13A2（1KM 植被指数 16 天合成产品）<br>全球 MOD13A2 数据为 16 天合成的 1000 米 L3 数据产品，投影为正弦曲线投影。VI 产品在 Terra 星和 Aqua 星数据分不同时间段进行计算， Terra 星数据从每年的第 1 天开始， Aqua星数据从每年的第 8 天开始。植被指数可以用于全球植被指数监测，也可以用在显示地表覆盖或者地表覆盖变化的产品中，还可以用作全球生物地球化学和水文模型或者全球或地区气候等模型的输入数据，还可以用于描述陆地表面的生物物理特征及进程，包括初级生产以及陆地表面覆盖的转换。</li>
+<li>MOD13A3（1KM 月植被指数 L3 产品）<br>MOD13A3 为 1 KM 月植被指数 L3 产品。</li>
+<li>MOD13Q1（250M 植被指数 16 天合成产品）<br>全球 MOD13Q1 数据为 16 天合成的 250 米 L3 数据产品，投影为正弦曲线投影。因为没有 250 米的蓝色波段，EVI 算法利用 500 米的蓝色波段来矫正气溶胶的影响，会有一些微小的空间变形。植被指数可以用于全球植被指数监测，也可以用在显示地表覆盖或者地表覆盖变化的产品中，还可以用作全球生物地球化学和水文模型或者全球或地区气候等模型的输入数据，还可以用于描述陆地表面的生物物理特征及进程，包括初级生产以及陆地表面覆盖的转换。</li>
+</ul>
+<p> <br>温度异常&#x2F;火产品：MODIS 温度异常&#x2F;火数据产品主要是从 MODIS 4-11 波段微波辐射计算来的。火的监测策略是以火的绝对监测（当火的强度足够被检测到时）和检测（证明表面温度和太阳反射的变化）。很多的测试用来排除了错误警报信息，比如太阳闪烁以及海岸带揭露等。</p>
+<ul>
+<li>MOD14A1 （每日 1KM 温度异常&#x2F;火 L3 级产品）<br>MOD14A1 数据为 8 天 1000 米分辨率 L3 数据产品，投影为正弦曲线投影。它是唯一有3 个空间尺寸分割的数据产品，火掩膜（1D），最大火辐射能量（2D）和 8 天期限中每天的贡献量（3D）。<br>MODIS Terra 星每天两次获得监测数据（上午 10：30 和 PM），MODIS Aqua 也是（下午1：30 和 AM）。每天四次的 MODIS 火灾观测数据用来推进全球火灾监测进程以及火灾对生态系统、大气、气候等的影响。</li>
+<li>MOD14A2（1KM 温度异常&#x2F;火 8 天合成产品）<br>MOD14A2 数据为 8 天合成的 1000 米分辨率 L3 火掩膜数据产品，投影为正弦曲线投影。科学数据集包括火掩膜和算法质量评价。MODIS Terra 星每天两次获得监测数据（上午 10：30 和 PM），MODIS Aqua 也是（下午1：30 和 AM）。每天四次的 MODIS 火灾观测数据用来推进全球火灾监测进程以及火灾对生态系统、大气、气候等的影响。</li>
+</ul>
+<p> <br>叶面积指数 LAI&#x2F;光合有效辐射分量 FPAR：</p>
+<ul>
+<li>MOD15A2（1KM 叶面积指数（LAI）&#x2F;光合有效辐射分量（FPAR）8 天合成 L4 级产品）<br>叶面积指数(Leaf Area Index，LAI)和植物吸收性光合有效辐射分量(Fraction of Absorbed photosynthetically Active Radiation，FPAR)是描述植被冠层结构及相关能量交换过程速率的两个重要的植物生理参数。<br>MOD15A2 数据为 8 天合成的 1000 米分辨率 L4 级叶面积指数（LAI） &#x2F;光合有效辐射分量（FPAR）数据产品，投影为正弦曲线投影。MOD15A2 中的科学数据集包括 LAI、FPAR、质量评价以及每一个变量的标准差。<br>LAI 是植被冠层结构的重要指标，对群落的光分布、光能利用和产量有显著影响。FPAR是冠层吸收的光合有效辐射比率，它反映了植被对光能的利用效率。这两个变量可以作为卫星提取参数进行表面光和作用、蒸发蒸腾作用、以及初级净第一生产力的计算。反之又可以进行陆地能量、碳、水循环过程和植被地球生物化学等过程的计算。</li>
+</ul>
+<p>总初级生产力 GPP：</p>
+<ul>
+<li>MOD17A2（1KM 总初级生产力 8 天合成产品）<br>初级生产力(GPP:Gross Primary Productivity)是指单位时间内生物（主要是绿色植物）通过光合作用途径所固定的有机碳量，又称总第一性生产力。 GPP 决定了进入陆地生态系统的初始物质和能量。<br>MODIS 总初级生产力（GPP）产品（MOD17A2）可以用作表面光和作用、蒸发蒸腾作用、以及初级净第一生产力等模型的输入数据。 MOD17A2 数据为 8 天合成的 1000 米分辨率总初级生产力（GPP）数据产品，投影为正弦曲线投影。</li>
+</ul>
+<p> </p>
+<h2 id="Aqua-卫星及其数据产品："><a href="#Aqua-卫星及其数据产品：" class="headerlink" title="Aqua 卫星及其数据产品："></a>Aqua 卫星及其数据产品：</h2><p>Aqua 星为晚上星，其陆地标准产品，包括：</p>
+<ul>
+<li>MYD09A1（500 米地表反射率 8 天合成产品）；</li>
+<li>MYD09GA（500 米地表反射率）；</li>
+<li>MYD09GQ（250 米地表反射率）；</li>
+<li>MYD09Q1（250 米地表反射率 8 天合成产品）；</li>
+<li>MYD11A1（1KM 地表温度&#x2F;反射率 L3 产品）；</li>
+<li>MYD11A2（1KM 地表温度&#x2F;反射率 8 天合成 L3 产品）；</li>
+<li>MYD11B1（5KM 地表温度&#x2F;发射率 8 天合成 L3 产品）；</li>
+<li>MYD13A1（500 米分辨率植被指数 16 天合成产品）；</li>
+<li>MYD13A2（1KM 植被指数 16 天合成产品）；</li>
+<li>MYD13A3（1KM 月植被指数 L3 产品）；</li>
+<li>MYD13Q1（250M 植被指数 16 天合成产品）；</li>
+<li>MYD14A1 （每日 1KM 温度异常&#x2F;火 L3 级产品）；</li>
+<li>MYD14A2（1KM 温度异常&#x2F;火 8 天合成产品）；</li>
+<li>MYD15A2 （1KM 叶面积指数（LAI） &#x2F;光合有效辐射分量（FPAR） 8 天合成 L4 级产品）；</li>
+<li>MYD17A2（1KM 总初级生产力 8 天合成产品）</li>
+</ul>
+
+          
+        </div>
+
+        
+
+        <div class="post-bottom-tags-and-share border-box">
+          <div>
+            
+          </div>
+          <div>
+            
+          </div>
+        </div>
+
+        
+
+        
+
+        
+          
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+        
+      </div>
+    </div>
+
+    <div class="page-main-content-bottom border-box">
+      
+<footer class="footer border-box">
+  <div class="copyright-info info-item">
+  &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2026
+  
+      &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Keep Team</a>
+    
+  </div>
+
+  <div class="theme-info info-item">
+    由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+  </div>
+
+  
+
+  
+
+  
+</footer>
+
+    </div>
+  </div>
+
+  <!-- post tools -->
+  
+    <div class="post-tools right-toc">
+      <div class="post-tools-container border-box">
+  <ul class="post-tools-list border-box">
+    <!-- PC encrypt again -->
+    
+
+    <!-- PC TOC show toggle -->
+    
+
+    <!-- PC go comment -->
+    
+
+    <!-- PC full screen -->
+    <li class="tools-item flex-center full-screen">
+      <i class="fa-solid fa-expand"></i>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  
+
+  <!-- side tools -->
+  <div class="side-tools">
+    <div class="side-tools-container border-box ">
+  <ul class="side-tools-list side-tools-show-handle border-box">
+    <li class="tools-item tool-font-adjust-plus flex-center">
+      <i class="fas fa-search-plus"></i>
+    </li>
+
+    <li class="tools-item tool-font-adjust-minus flex-center">
+      <i class="fas fa-search-minus"></i>
+    </li>
+
+    <!-- toggle chinese -->
+    
+      <li class="tools-item tool-toggle-chinese flex-center">
+        <button type="button"
+            data-native-script="cn"
+            data-opencc-src="/js/libs/opencc.full.js"
+            data-label-cn="切换为简体中文"
+            data-label-tw="切换为繁体中文"
+            data-label-error="简繁转换加载失败，点击重试"
+        >
+          繁
+        </button>
+      </li>
+    
+
+    <!-- toggle mode -->
+    
+      <li class="tools-item tool-toggle-theme-mode flex-center">
+        <i class="fas fa-moon"></i>
+      </li>
+    
+
+    <!-- rss -->
+    
+
+    <!-- to bottom -->
+    <li class="tools-item tool-scroll-to-bottom flex-center">
+      <i class="fas fa-arrow-down"></i>
+    </li>
+  </ul>
+
+  <ul class="exposed-tools-list border-box">
+    
+
+    
+
+    <li class="tools-item tool-toggle-show flex-center">
+      <i class="fas fa-cog fa-spin"></i>
+    </li>
+
+    <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+      <i class="arrow fas fa-arrow-up"></i>
+      <span class="percent"></span>
+    </li>
+  </ul>
+</div>
+
+  </div>
+
+  <!-- image mask -->
+  <div class="zoom-in-image-mask">
+  <img class="zoom-in-image">
+</div>
+
+
+  <!-- local search -->
+  
+
+  <!-- tablet toc -->
+  
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/chinese-convert.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+  <!-- home page -->
+  
+
+  <!-- post page -->
+  
+    <!-- post-helper -->
+    
+<script src="/js/post/post-helper.js"></script>
+
+
+    <!-- toc -->
+    
+
+    <!-- copyright-info -->
+    
+
+    <!-- share -->
+    
+  
+
+  <!-- categories page -->
+  
+
+  <!-- links page -->
+  
+
+  <!-- photos page -->
+  
+
+  <!-- tools page -->
+  
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
